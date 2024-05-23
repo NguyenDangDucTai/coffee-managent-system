@@ -30,6 +30,7 @@ public class BillController {
     @GetMapping
     public ResponseEntity<List<Bill>> getBills() {
         try {
+            System.out.println("GetBill");
             return billService.getBills();
         } catch (Exception exception) {
             exception.printStackTrace();
